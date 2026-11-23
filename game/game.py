@@ -89,7 +89,7 @@ class Lava(pg.sprite.Sprite):
 
 
 def game_loop(window, screen, clock):
-    player = Player(100, 100)
+    player = Player(400, 400)
     coin = Coin(random.randint(1, 800), random.randint(1, 800))
     lava = Lava(0, 700)
     shop = pg.Rect(0, 1000, 800, 200)
@@ -127,9 +127,9 @@ def game_loop(window, screen, clock):
 
 def start_menu(display_size, dt, running):
     manager = pygame_gui.UIManager(display_size)
-    start_button = pygame_gui.elements.UIButton(relative_rect=(400, 400, 300, 200), text="Start", manager=manager)
-    settings_button = pygame_gui.elements.UIButton(relative_rect=(600, 600, 200, 200), text="Settings", manager=manager)
-    quit_button = pygame_gui.elements.UIButton(relative_rect=(200, 200, 200, 200), text="Quit", manager=manager)
+    start_button = pygame_gui.elements.UIButton(relative_rect=(0, 600, 800, 200), text="Start", manager=manager)
+    settings_button = pygame_gui.elements.UIButton(relative_rect=(0, 800, 800, 200), text="Settings", manager=manager)
+    quit_button = pygame_gui.elements.UIButton(relative_rect=(0, 200, 800, 400), text="Quit", manager=manager)
     window = pg.display.set_mode(display_size)
     while running:
         for event in pg.event.get():
@@ -159,11 +159,16 @@ def settings_menu(display_size, dt, running):
         for event in pg.event.get():
             if event.type == pg.QUIT:
                 return "Quit"
+            manager.process_events(event)
             if event.type == pygame_gui.UI_BUTTON_PRESSED:
                 if event.ui_element == setting_button_1:
-                    color = random.randint(0, 255)
-                    window.fill((color,color,color))
+                    return "Start Menu"
         manager.update(dt)
         manager.draw_ui(window)
         pg.display.flip()
     return "Start Menu"
+
+
+def platform_generator():
+    platform = pg.Rect(800, 800, 200, 200)
+    ladder = pg.Rect(600, 800, 25, 200)

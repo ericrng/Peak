@@ -1,7 +1,6 @@
 import pygame as pg
 import sys
-import random
-from game import Player, Coin, Lava, start_menu, game_loop, settings_menu
+from game import start_menu, game_loop, settings_menu
 
 # Initialization
 pg.init()
