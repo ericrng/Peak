@@ -11,3 +11,9 @@ Currently, it's very far from being completed and is very rudimentary.
 - Platforms to jump on or ways to get to higher elevation. 
 - Creating Progress Bars and other info indicators.
 - Creating endless scrolling.
+### How to Play
+Currently, there isn't much to do. Really the only things you can do are collect coins, buy speed upgrades by clicking the big black box, and don't die to the lava.
+The menus do not currently have functionality either, so pretty much nothing to do.
+
+### Image of Game
+[![Screenshot-2026-11-22-214117.png](https://i.postimg.cc/3r2DhKWd/Screenshot-2026-11-22-214117.png)](https://postimg.cc/hhPGbRLB)
