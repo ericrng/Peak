@@ -2,6 +2,9 @@
 ### What is Peak?
 The concept behind Peak is that it is a climbing game up an endless mountain, collecting coins and buying upgrades to slow down the rising lava.
 Currently, it's very far from being completed and is very rudimentary. 
+### Purpose
+My reason for attempting to make this a game was wanting to learn game design, which was much harder than I realized.
+I'm not sure if I will continue this project for now as I do not have much time. 
 ### Current Features
 - Normalized Movement
 - Collecting Coins and Buying Speed Upgrade using a button.
