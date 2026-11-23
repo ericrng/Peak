@@ -1,6 +1,5 @@
 import pygame as pg
 import random
-from pygame.sprite import collide_rect
 import pygame_gui
 
 
